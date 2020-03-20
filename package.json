@@ -1,0 +1,22 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7Amin/DesignPatterns-nodejs.git"
+  },
+  "author": "amin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7Amin/DesignPatterns-nodejs/issues"
+  },
+  "homepage": "https://github.com/7Amin/DesignPatterns-nodejs#readme",
+  "dependencies": {
+    "abstract-class-js": "^1.3.0"
+  }
+}

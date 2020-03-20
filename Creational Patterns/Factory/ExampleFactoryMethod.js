@@ -1,5 +1,3 @@
-const AbstractClass = require("abstract-class-js");
-
 class KnifeFactory {
     createKnife(knifeType) {
         let knife;
@@ -20,9 +18,12 @@ class KnifeFactory {
     }
 };
 
-class KnifeStore extends AbstractClass {
+class KnifeStore {
+    constructor(knifeFactory) {
+        this.knifeFactory = KnifeFactory;
+    }
     orderKnife (knifeType) {
-        const knife = this.createKnife(knifeType);
+        const knife = this.knifeFactory.createKnife(knifeType);
 
         knife.sharpen();
         knife.polish();
@@ -30,8 +31,4 @@ class KnifeStore extends AbstractClass {
 
         return knife;
     }
-    createKnife(knifeType) {
-        throw new Error('You have to implement the method doSomething!');
-    }
-
 };

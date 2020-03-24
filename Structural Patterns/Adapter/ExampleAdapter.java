@@ -1,10 +1,10 @@
-public Interface CoffeeMachineInterface {
+public interface CoffeeMachineInterface {
     public void chooseFirstSelection();
     public void chooseSecondSelection();
     public void chooseThirdSelection();
 }
 
-public class CoffeeTouchscreenAdapter extends CoffeeMachineInterface{
+public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface{
     public CoffeeTouchscreenAdapter(OldCoffeeMachine oldCoffeeMachine){
         this.oldCoffeeMachine = oldCoffeeMachine;
     }
